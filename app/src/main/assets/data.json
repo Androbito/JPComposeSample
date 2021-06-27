@@ -1,0 +1,198 @@
+[
+  {
+    "id": 1,
+    "cat_name": "Pizza",
+    "cat_img": "https://i.ibb.co/QHK1j1p/pizza.png",
+    "subcategories": [
+      {
+        "id": 1,
+        "subcat_name": "Pizza Marguerita",
+        "subcat_img": "https://i.ibb.co/ChL2qWF/pizza-marguerita.png",
+        "subcat_details": "Tomato sauce, Cheese, Oregano",
+        "price": 45
+      },
+      {
+        "id": 2,
+        "subcat_name": "Pizza 4 fromages",
+        "subcat_img": "https://i.ibb.co/WfxckVL/pizza-4-fromages.png",
+        "subcat_details": "Tomaro sauce, Fromage gorgonzalo, brie, Grated cheese, Oregano",
+        "price": 55
+      },
+      {
+        "id": 3,
+        "subcat_name": "Pizza Tuna",
+        "subcat_img": "https://i.ibb.co/xMByXzY/pizza-tuna.png",
+        "subcat_details": "Tomato sauce, Cheese, Oregano, Tuna",
+        "price": 35
+      },
+      {
+        "id": 4,
+        "subcat_name": "Pizza Vegetarian",
+        "subcat_img": "https://i.ibb.co/JqDxLzt/pizza-vegetarian.png",
+        "subcat_details": "Tomato sauce, Cheese, Oregano, Pepper, Olives, Fresh tomatoes",
+        "price": 50
+      },
+      {
+        "id": 5,
+        "subcat_name": "Seafood Pizza",
+        "subcat_img": "https://i.ibb.co/yX6Bbrm/pizza-seafood.png",
+        "subcat_details": "Tomato sauce, Cheese, Garlic, Seafood",
+        "price": 55
+      },
+      {
+        "id": 6,
+        "subcat_name": "Royal Pizza",
+        "subcat_img": "https://i.ibb.co/mB16DDM/pizza-royal.png",
+        "subcat_details": "Tomato sauce, Squid, Shrimp, Chicken, Mushrooms, Cheese",
+        "price": 60
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "cat_name": "Burger",
+    "cat_img": "https://i.ibb.co/n1dZtyq/Burger.png",
+    "subcategories": [
+      {
+        "id": 1,
+        "subcat_name": "Burger Beef",
+        "subcat_img": "https://i.ibb.co/gz128mY/burger-beef.png",
+        "subcat_details": "Beef, Cheese, Tomato, Medium fries",
+        "price": 46
+      },
+      {
+        "id": 2,
+        "subcat_name": "Burger Double BBQ XXL",
+        "subcat_img": "https://i.ibb.co/QfKRqTg/burger-bbq.png",
+        "subcat_details": "BBQ sauce, Cheese, Medium fries",
+        "price": 68
+      },
+      {
+        "id": 3,
+        "subcat_name": "Burger Mushroom Single",
+        "subcat_img": "https://i.ibb.co/q0b1PdV/burger-mushroom.png",
+        "subcat_details": "Mushroom, Cheese, Medium fries",
+        "price": 60
+      },
+      {
+        "id": 4,
+        "subcat_name": "Burger Rustic Beef",
+        "subcat_img": "https://i.ibb.co/KsRvkMd/burger-beef-rustic.png",
+        "subcat_details": "Beef, Cheese, Tomato, Ketchup, Lettuce, Medium fries",
+        "price": 62
+      },
+      {
+        "id": 5,
+        "subcat_name": "Burger Rodeo Chicken",
+        "subcat_img": "https://i.ibb.co/1sHyWdz/burger-rodeo.png",
+        "subcat_details": "Chicken, Cheese, Ketchup, Mayonaisse, Medium fries",
+        "price": 62
+      },
+      {
+        "id": 6,
+        "subcat_name": "Burger Chili Royal",
+        "subcat_img": "https://i.ibb.co/QJRBygJ/burger-chili.png",
+        "subcat_details": "Chicken, Chili, Lettuce, Mayonaisse, Medium fries",
+        "price": 68
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "cat_name": "Tacos",
+    "cat_img": "https://i.ibb.co/rbKNTM7/tacos.png",
+    "subcategories": [
+      {
+        "id": 1,
+        "subcat_name": "Tacos mixte",
+        "subcat_img": "https://i.ibb.co/HxBwLBg/tacos-mixte.png",
+        "subcat_details": "Wheat patty, Fillet steak, Chicken fillet, Cheese sauce, Fries",
+        "price": 60
+      },
+      {
+        "id": 2,
+        "subcat_name": "Tacos swiss",
+        "subcat_img": "https://i.ibb.co/m0tVrVy/tacos-swiss.png",
+        "subcat_details": "Chicken cutlet, Smoked ham, Emmental",
+        "price": 55
+      },
+      {
+        "id": 3,
+        "subcat_name": "Tacos Chicken",
+        "subcat_img": "https://i.ibb.co/GkF8CnX/tacos-chicken.png",
+        "subcat_details": "Wheat patty, Chicken fillet, Cheese sauce, Fries",
+        "price": 50
+      },
+      {
+        "id": 4,
+        "subcat_name": "Tacos ground meat",
+        "subcat_img": "https://i.ibb.co/N9GLbLB/tacos-ground-meat.png",
+        "subcat_details": "Wheat patty, Minced meat, Cheese sauce, Fries",
+        "price": 55
+      },
+      {
+        "id": 5,
+        "subcat_name": "Tacos Nuggets",
+        "subcat_img": "https://i.ibb.co/9yZX1y3/tacos-nuggets.png",
+        "subcat_details": "Wheat patty, Chicken nuggets, Cheese sauce, Fries",
+        "price": 35
+      },
+      {
+        "id": 6,
+        "subcat_name": "Tacos seafood",
+        "subcat_img": "https://i.ibb.co/VBRfn3L/tacos-seafood.png",
+        "subcat_details": "Wheat pancake, Seafood, Cheese sauce, Fries",
+        "price": 45
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "cat_name": "Desserts",
+    "cat_img": "https://i.ibb.co/zf38jFj/desserts.png",
+    "subcategories": [
+      {
+        "id": 1,
+        "subcat_name": "Lava Cake Chocolat",
+        "subcat_img": "https://i.ibb.co/pP7H9F4/lava-cacke-chocolat.png",
+        "subcat_details": "Crispy outside, Chocolate volcano inside",
+        "price": 19
+      },
+      {
+        "id": 2,
+        "subcat_name": "Crownies - 9 Pieces",
+        "subcat_img": "https://i.ibb.co/k05kjSj/crownies.png",
+        "subcat_details": "The best of a fluffy cookie at the heart of a melting brownie! a pleasure to share with the whole family, after a good pizza or with a scoop of vanilla ice cream and a coffee",
+        "price": 69
+      },
+      {
+        "id": 3,
+        "subcat_name": "Milkshake Chocolat",
+        "subcat_img": "https://i.ibb.co/wdxWF6W/milkshake-chokolate.png",
+        "subcat_details": "Milk cream, Chocolat",
+        "price": 18
+      },
+      {
+        "id": 4,
+        "subcat_name": "Almond ice cream 100ml",
+        "subcat_img": "https://i.ibb.co/GWX3h0z/almod-ice-cream.png",
+        "subcat_details": "Almond, Chocolat",
+        "price": 21
+      },
+      {
+        "id": 5,
+        "subcat_name": "Magnum Ice Cream 100ml",
+        "subcat_img": "https://i.ibb.co/NrJfjY3/magnim-ice-cream.png",
+        "subcat_details": "Withe chocolat, Vanilla",
+        "price": 21
+      },
+      {
+        "id": 6,
+        "subcat_name": "Za3za3 juice",
+        "subcat_img": "https://i.ibb.co/3kWcJxM/za3za3.png",
+        "subcat_details": "Avocado juice, Almond, Kitkat, Chocolat sauce, Banana",
+        "price": 25
+      }
+    ]
+  }
+]
