@@ -94,7 +94,7 @@ fun loadNetworkImage(url: String, contentDescription: String, modifier: Modifier
         request = url,
         requestBuilder = {
             transformations(CircleCropTransformation())
-        }
+        },previewPlaceholder = R.drawable.icon
     )
 
     Box(modifier = modifier) {

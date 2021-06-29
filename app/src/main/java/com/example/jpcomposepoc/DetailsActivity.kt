@@ -9,9 +9,8 @@ import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.tooling.preview.PreviewParameter
 import com.example.jpcomposepoc.model.CategoriesDataSource
-import com.example.jpcomposepoc.model.Subcategory
+import com.example.jpcomposepoc.ui.screens.loadSubCategoryDetails
 import com.example.jpcomposepoc.ui.theme.JPComposePOCTheme
 
 const val CATEGORY_ID = "Category_ID"
