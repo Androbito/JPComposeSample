@@ -18,11 +18,11 @@ object CategoriesDataSource {
         return getCategories(context = context).single { it.id == id }
     }
 
-    fun getSubCategoryByID(context: Context, idCategory: Int, idSubCategory: Int): Subcategory {
+    fun getSubCategoryByID(context: Context, idCategory: Int, idSubCategory: Int): Meal {
         return getCategoryByID(
             context = context,
             idCategory
-        ).subcategories.single { it.id == idSubCategory }
+        ).meals.single { it.id == idSubCategory }
     }
 }
 
@@ -35,7 +35,7 @@ class CategoriesSampleProvider : CollectionPreviewParameterProvider<CategoryItem
             2,
             "https://picsum.photos/300/300",
             listOf(
-                Subcategory(
+                Meal(
                     1,
                     "https://picsum.photos/300/300",
                     40,
@@ -47,8 +47,8 @@ class CategoriesSampleProvider : CollectionPreviewParameterProvider<CategoryItem
     )
 )
 
-class SubCategoriesSampleProvider : CollectionPreviewParameterProvider<Subcategory>(
+class SubCategoriesSampleProvider : CollectionPreviewParameterProvider<Meal>(
     listOf(
-        Subcategory(1, "https://picsum.photos/300/300", 40, "Coffee with milk", "Coffee Late")
+        Meal(1, "https://picsum.photos/300/300", 40, "Coffee with milk", "Coffee Late")
     )
 )

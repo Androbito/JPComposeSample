@@ -57,7 +57,7 @@ dependencies {
     implementation("androidx.activity:activity-compose:1.3.1")
     implementation("androidx.navigation:navigation-compose:2.4.0-alpha06")
 
-    implementation("com.google.accompanist:accompanist-coil:0.15.0")
+    implementation("io.coil-kt:coil-compose:1.3.2")
     implementation("com.google.code.gson:gson:2.8.7")
     implementation("androidx.room:room-runtime:${rootProject.extra["room_version"]}")
     annotationProcessor("androidx.room:room-compiler:${rootProject.extra["room_version"]}")

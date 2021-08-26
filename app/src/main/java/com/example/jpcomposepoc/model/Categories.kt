@@ -1,10 +1,6 @@
 package com.example.jpcomposepoc.model
 
-import android.content.Context
-import com.example.jpcomposepoc.getJsonDataFromAssetFileName
-import com.google.gson.Gson
 import com.google.gson.annotations.SerializedName
-import com.google.gson.reflect.TypeToken
 
 data class CategoryItem(
     @SerializedName("cat_name")
@@ -14,18 +10,18 @@ data class CategoryItem(
     @SerializedName("cat_img")
     val catImg: String,
     @SerializedName("subcategories")
-    val subcategories: List<Subcategory>
+    val meals: List<Meal>
 )
 
-data class Subcategory(
+data class Meal(
     @SerializedName("id")
     val id: Int,
     @SerializedName("subcat_img")
-    val subcatImg: String,
+    val mealImg: String,
     @SerializedName("price")
     val price: Int,
     @SerializedName("subcat_details")
-    val subcatDetails: String,
+    val mealDetails: String,
     @SerializedName("subcat_name")
     val subcatName: String
 )
