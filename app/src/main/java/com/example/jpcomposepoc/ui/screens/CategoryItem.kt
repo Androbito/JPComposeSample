@@ -17,7 +17,7 @@ import com.example.jpcomposepoc.model.CategoryItem
 @Composable
 fun CategoryItem(
     @PreviewParameter(CategoriesSampleProvider::class) category: CategoryItem,
-    goToDetails: ((Int, Int) -> Unit)? = null
+    goToDetails: (Int, Int) -> Unit = { _: Int, _: Int -> }
 ) {
 
     Card(
@@ -47,9 +47,9 @@ fun CategoryItem(
                 )
             }
             category.meals.forEach { subCategory ->
-                goToDetails?.let {
-                    MealItem(category, subCategory, goToDetails)
-                }
+
+                MealItem(category, subCategory, goToDetails)
+
             }
         }
     }

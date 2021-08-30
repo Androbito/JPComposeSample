@@ -4,6 +4,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.Button
 import androidx.compose.material.CircularProgressIndicator
@@ -52,7 +53,7 @@ fun NetworkImage(url: String, contentDescription: String, modifier: Modifier) {
             // If you wish to display some content if the request fails
             Image(
                 painter = painterResource(id = android.R.drawable.stat_notify_error),
-                contentDescription = null // decorative element
+                contentDescription = "Error loading image" // decorative element
             )
         }
     }
@@ -64,27 +65,28 @@ fun QuantityBlock() {
     Row(
         modifier = Modifier
             .padding(16.dp)
+            .width(150.dp)
     ) {
-        var quantity by remember { mutableStateOf(0) }
+        var quantity by remember { mutableStateOf(1) }
         Button(modifier = Modifier
-            .padding(16.dp)
-            .weight(0.2f)
+            .padding(8.dp)
+            .weight(1f)
             .align(Alignment.CenterVertically), onClick = {
-            if (quantity > 0) {
+            if (quantity > 1) {
                 quantity--
             }
         }) { Text(text = "-") }
         OutlinedTextField(modifier = Modifier
             .align(Alignment.CenterVertically)
-            .weight(0.6f),
+            .weight(1f),
             value = "$quantity",
             keyboardOptions = KeyboardOptions.Default.copy(keyboardType = KeyboardType.Number),
             onValueChange = {
                 quantity = if (it.isNotBlank()) it.toInt() else 0
             })
         Button(modifier = Modifier
-            .padding(16.dp)
-            .weight(0.2f)
+            .padding(8.dp)
+            .weight(1f)
             .align(Alignment.CenterVertically), onClick = {
             if (quantity < 99) {
                 quantity++

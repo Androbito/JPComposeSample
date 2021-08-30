@@ -1,12 +1,17 @@
 package com.example.jpcomposepoc.model
 
 import android.content.Context
+import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.tooling.preview.datasource.CollectionPreviewParameterProvider
 import com.example.jpcomposepoc.getJsonDataFromAssetFileName
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
 object CategoriesDataSource {
+
+    var orderList = mutableStateListOf<Meal>()
+
     fun getCategories(context: Context): List<CategoryItem> {
         val gson = Gson()
         val listPersonType = object : TypeToken<List<CategoryItem>>() {}.type

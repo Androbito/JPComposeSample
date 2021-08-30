@@ -37,11 +37,11 @@ fun MealItem(
                 )
         ) {
             NetworkImage(
-                subCategory.mealImg, subCategory.subcatName, Modifier
+                subCategory.mealImg, subCategory.mealName, Modifier
                     .size(size = 40.dp)
             )
             Text(
-                text = subCategory.subcatName,
+                text = subCategory.mealName,
                 modifier = Modifier
                     .fillMaxWidth(0.8f)
                     .align(Alignment.CenterVertically)

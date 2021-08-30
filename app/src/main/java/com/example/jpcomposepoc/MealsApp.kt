@@ -11,8 +11,10 @@ import com.example.jpcomposepoc.Destinations.Home
 import com.example.jpcomposepoc.Destinations.MealDetails
 import com.example.jpcomposepoc.Destinations.MealDetailsArgs.CategoryId
 import com.example.jpcomposepoc.Destinations.MealDetailsArgs.MealId
+import com.example.jpcomposepoc.Destinations.OrderDetails
 import com.example.jpcomposepoc.ui.screens.HomeScreen
 import com.example.jpcomposepoc.ui.screens.MealDetailsScreen
+import com.example.jpcomposepoc.ui.screens.OrderDetailsScreen
 
 
 @Composable
@@ -32,8 +34,12 @@ fun MealsApp() {
             MealDetailsScreen(
                 idCategory = navBackStackEntry.arguments?.getInt(CategoryId) ?: 1,
                 mealId = navBackStackEntry.arguments?.getInt(MealId) ?: 1,
-                navigateUp = actions.navigateUp
+                navigateUp = actions.navigateUp,
+                navigateToOrder = actions.openOrder
             )
+        }
+        composable(OrderDetails){
+            OrderDetailsScreen(backHome = actions.backHome)
         }
     }
 }

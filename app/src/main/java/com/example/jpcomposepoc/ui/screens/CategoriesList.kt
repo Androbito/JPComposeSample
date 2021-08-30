@@ -7,11 +7,12 @@ import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.tooling.preview.Preview
 import com.example.jpcomposepoc.model.*
 
-
+@Preview
 @Composable
-fun HomeScreen(openMeal: (Int, Int) -> Unit) {
+fun HomeScreen(openMeal: (Int, Int) -> Unit = { _: Int, _: Int -> }) {
     Column {
         TopAppBar(title = {
             Text(text = "List of meals")
@@ -22,8 +23,8 @@ fun HomeScreen(openMeal: (Int, Int) -> Unit) {
                 .verticalScroll(rememberScrollState())
                 .fillMaxWidth()
         ) {
-            list.forEach {
-                CategoryItem(it, openMeal)
+            list.forEach { item ->
+                CategoryItem(item, openMeal)
             }
         }
     }

@@ -23,5 +23,5 @@ data class Meal(
     @SerializedName("subcat_details")
     val mealDetails: String,
     @SerializedName("subcat_name")
-    val subcatName: String
+    val mealName: String
 )
