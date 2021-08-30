@@ -48,7 +48,7 @@ fun MealItem(
                     .padding(8.dp, 0.dp)
             )
             Text(
-                text = "${subCategory.price} MAD", style = TextStyle(
+                text = "${subCategory.price/10f} $", style = TextStyle(
                     color = Color.Black,
                     fontWeight = FontWeight.Bold,
                     textAlign = TextAlign.Right
