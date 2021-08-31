@@ -8,6 +8,8 @@ import androidx.compose.material.Icon
 import androidx.compose.material.IconButton
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Clear
+import androidx.compose.material.icons.outlined.Clear
 import androidx.compose.material.icons.rounded.Delete
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -34,7 +36,7 @@ fun OrderItem(@PreviewParameter(SubCategoriesSampleProvider::class) meal: Meal) 
             modifier = Modifier.align(Alignment.CenterVertically),
         ) {
             Icon(
-                Icons.Rounded.Delete,
+                Icons.Default.Clear,
                 contentDescription = "Delete meal",
                 tint = Color.Red
             )

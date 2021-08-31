@@ -41,7 +41,6 @@ android {
     }
     composeOptions {
         kotlinCompilerExtensionVersion = rootProject.extra["compose_version"] as String
-        kotlinCompilerVersion = rootProject.extra["kotlin_version"] as String
     }
 }
 
@@ -53,6 +52,7 @@ dependencies {
     implementation("androidx.compose.ui:ui:${rootProject.extra["compose_version"]}")
     implementation("androidx.compose.material:material:${rootProject.extra["compose_version"]}")
     implementation("androidx.compose.ui:ui-tooling:${rootProject.extra["compose_version"]}")
+    implementation("androidx.compose.material:material-icons-extended:${rootProject.extra["compose_version"]}")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.3.1")
     implementation("androidx.activity:activity-compose:1.3.1")
     implementation("androidx.navigation:navigation-compose:2.4.0-alpha06")

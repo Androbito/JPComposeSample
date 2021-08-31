@@ -11,18 +11,16 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
-import com.example.jpcomposepoc.model.CategoriesSampleProvider
-import com.example.jpcomposepoc.model.CategoryItem
-import com.example.jpcomposepoc.model.Meal
-import com.example.jpcomposepoc.model.SubCategoriesSampleProvider
+import com.example.jpcomposepoc.model.*
 
 
 @Composable
 fun MealItem(
-    @PreviewParameter(CategoriesSampleProvider::class) category: CategoryItem,
-    @PreviewParameter(SubCategoriesSampleProvider::class) subCategory: Meal,
+    category: CategoryItem,
+    subCategory: Meal,
     navigateToDetails: (Int, Int) -> Unit
 ) {
     Column {
@@ -48,7 +46,7 @@ fun MealItem(
                     .padding(8.dp, 0.dp)
             )
             Text(
-                text = "${subCategory.price/10f} $", style = TextStyle(
+                text = "${subCategory.price / 10f} $", style = TextStyle(
                     color = Color.Black,
                     fontWeight = FontWeight.Bold,
                     textAlign = TextAlign.Right
@@ -59,4 +57,14 @@ fun MealItem(
         }
 
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun MealItemPreviewMock(
+    @PreviewParameter(MealItemScreenSampleProvider::class) mealItemMock: MealItemMock
+) {
+    MealItem(category = mealItemMock.catItem,
+        subCategory = mealItemMock.meal,
+        navigateToDetails = { _: Int, _: Int -> })
 }

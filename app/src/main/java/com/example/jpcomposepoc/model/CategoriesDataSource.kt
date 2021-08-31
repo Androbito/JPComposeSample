@@ -3,6 +3,7 @@ package com.example.jpcomposepoc.model
 import android.content.Context
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.remember
+import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import androidx.compose.ui.tooling.preview.datasource.CollectionPreviewParameterProvider
 import com.example.jpcomposepoc.getJsonDataFromAssetFileName
 import com.google.gson.Gson
@@ -55,5 +56,25 @@ class CategoriesSampleProvider : CollectionPreviewParameterProvider<CategoryItem
 class SubCategoriesSampleProvider : CollectionPreviewParameterProvider<Meal>(
     listOf(
         Meal(1, "https://picsum.photos/300/300", 40, "Coffee with milk", "Coffee Late")
+    )
+)
+
+data class MealItemMock(
+    val catItem: CategoryItem,
+    val meal: Meal
+)
+
+class MealItemScreenSampleProvider : CollectionPreviewParameterProvider<MealItemMock>(
+    listOf(
+        MealItemMock(
+            CategoryItem(
+                "Coffee",
+                2,
+                "https://picsum.photos/300/300",
+                listOf(
+                    Meal(1, "https://picsum.photos/300/300", 40, "Coffee with milk", "Coffee Late")
+                )
+            ), Meal(1, "https://picsum.photos/300/300", 40, "Coffee with milk", "Coffee Late")
+        )
     )
 )

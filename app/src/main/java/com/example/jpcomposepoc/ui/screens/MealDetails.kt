@@ -1,10 +1,13 @@
 package com.example.jpcomposepoc.ui.screens
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.AddChart
+import androidx.compose.material.icons.filled.AddShoppingCart
 import androidx.compose.material.icons.rounded.ArrowBack
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment.Companion.CenterHorizontally
@@ -67,13 +70,21 @@ fun MealDetailsScreen(
             Divider(color = Color.Black, thickness = 1.dp)
             Text(text = meal.mealDetails, modifier = Modifier.padding(16.dp))
             Button(
-                modifier = Modifier.align(CenterHorizontally),
                 onClick = navigateToOrder.also {
                     if (!orderList.contains(meal))
                         orderList.add(meal)
-                }
+                }, modifier = Modifier
+                    .padding(8.dp)
+                    .align(CenterHorizontally)
             ) {
-                Text(text = "Add")
+                Row {
+                    Icon(
+                        imageVector = Icons.Default.AddShoppingCart,
+                        contentDescription = null,
+                        modifier = Modifier.padding(end = 4.dp)
+                    )
+                    Text(text = "Add")
+                }
             }
         }
     }
